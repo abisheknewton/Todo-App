@@ -1,0 +1,14 @@
+<div class="container">
+    <p>welcome {{name}}</p>
+    Manage todos <a routerLink="/todos">here</a>
+</div>
+
+<div class="container">
+    Click here to get message
+    <button (click)="getWelcomeMessage()" class="btn btn-success"> Get Message</button>
+</div>
+
+
+<div class="container">
+    <h2 *ngIf="messageForCustom">Custom message from backend {{messageForCustom}}</h2>
+</div>
